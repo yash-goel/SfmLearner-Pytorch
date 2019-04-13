@@ -110,11 +110,11 @@ python3 test_pose.py /path/to/posenet --dataset-dir /path/to/KITIT_odometry --se
 **ATE** (*Absolute Trajectory Error*) is computed as long as **RE** for rotation (*Rotation Error*). **RE** between `R1` and `R2` is defined as the angle of `R1*R2^-1` when converted to axis/angle. It corresponds to `RE = arccos( (trace(R1 @ R2^-1) - 1) / 2)`.
 While **ATE** is often said to be enough to trajectory estimation, **RE** seems important here as sequences are only `seq_length` frames long.
 
-Explainability Mask Generation
+# Explainability Mask Generation
+
 ```bash
 python3 exp_mask_test.py /path/to/posenet --dataset-dir /path/to/dataset --output-dir /path/to/exp/mask/output
-`
-``
+```
 ## Pretrained Nets
 
 [Avalaible here](https://drive.google.com/drive/folders/1H1AFqSS8wr_YzwG2xWwAQHTfXN5Moxmx)
